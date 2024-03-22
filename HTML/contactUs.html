@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contactUsStyle.css">
+    <script src="validateForm.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="top">
+    <nav>
+        <ul>
+            <li><a href="aboutUs.html">درباره ما</a></li>
+            <li><a href="contactUs.html">تماس با ما</a></li>
+            <li><a href="services.html">خدمات</a></li>
+            <li><a href="mainPage.html">صفحه‌ی اصلی</a></li>
+            </ul>
+    </nav>
+    <div class="logo">
+        <!-- Your logo goes here -->
+        <img src="MixTop.PNG" alt="Logo">
+    </div>
+    </header>
+    <div class="wrapper">
+        <h2 style="background: #1dbcfd;
+        color: white;
+        letter-spacing: 0.1rem;
+        padding: 1rem;
+        cursor: default;">CONTACT US</h2>
+
+        <form action="" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName">
+                <span id="fullNameError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message here..."></textarea>
+                <span id="messageError" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit">Send Message</button>
+            </div>
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div style="margin-top: 25px;" class="single-box">
+                        <h2 style="color:#7ba0ff" >عضویت در خبرنامه</h2>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="ورود آدرس ایمیل" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i>عضویت</i>
+                        </div>
+                    <p>عضویت در خبرنامه خبر پو و دریافت آخرین اخبار و امکانات،خبرنامه رایگان عضویت در خبرنامه ایمیلی</p>
+                    <div class="card-area">
+                            <i class="fa fa-cc-visa"></i>
+                            <i class="fa fa-credit-card"></i>
+                            <i class="fa fa-cc-mastercard"></i>
+                            <i class="fa fa-cc-paypal"></i>
+                    </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 25px;" class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2 style="color:#7ba0ff">راه های ارتباطی</h2>
+                    <ul>
+                        <li><a href="#">آدرس: ملایر، دست راست</a></li>
+                        <li><a href="#">شماره موبایل: 09183336665</a></li>
+                        <li><a href="#">شماره تلفن: 08133665544</a></li>
+                        <li><a href="#">آدرس ایمیل</a></li>
+                        <li><a href="#">ahmadideadpool17@gmail.com</a></li>
+    
+                    </ul>
+                    </div>                    
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <img src="transparent logo.png" alt="">
+                        <p style="font-size: 13px; font-weight: bold;">تخصص ما در ایجاد دنیایی جذاب از طریق بازی، انیمیشن، و ویدیو هنری است. همراه با تجربه‌ای کارآمد و خلاق، ما داستان‌های شگفت‌انگیز را زندگی می‌کنیم و آثاری بی‌نظیر در حوزه چندرسانه‌ای ارائه می‌دهیم.</p>
+                        
+                        <h3 style="color:rgb(0, 153, 255)">ما را در شبکه های اجتماعی دنبال کنید</h2>
+                        <p class="socials">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-dribbble"></i>
+                            <i class="fa fa-pinterest"></i>
+                            <i class="fa fa-twitter"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js"> -->
+</body>
+
+</html>

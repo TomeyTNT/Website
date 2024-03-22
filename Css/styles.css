@@ -1,0 +1,452 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+
+.logo img{
+width: 70%;
+height: 120px;
+border-radius: 25px;
+}
+
+nav ul {
+font-size: 25px;
+font-weight: bold;
+  list-style: none;
+  display: flex;
+  margin-left: 350px;
+  margin-top: 40px;
+}
+
+nav a:hover {
+  color: rgb(27, 44, 234);
+}
+
+/* nav a:visited {
+  color: green;
+} */
+
+nav a {
+  text-decoration: none;
+  color: rgb(231, 73, 0);
+  margin: 0 15px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.main-section {
+  padding: 20px;
+}
+
+.section-one {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tagline {
+  margin-right: 40px;
+  text-align: right;
+}
+
+.slider {
+  border-radius: 50%;
+  margin-left: 100px;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  display: flex; /* افزودن این خط برای نمایش افقی اسلاید‌ها */
+}
+
+.slide {
+  flex: 0 0 100%; /* افزودن این خط برای تطابق اسلاید‌ها با اندازه container */
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* برای نزدیک‌تر کردن المان‌های داخل سکشن */
+.section-two {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.service {
+  flex: 1;
+  display: flex;
+  margin: 0 25px; /* تنظیم margin برای چپ و راست */
+}
+
+
+/* افزودن استایل به المان‌های خدمات
+.service {
+  display: flex;
+  margin-bottom: 20px;
+} */
+
+.service-details {
+  text-align: right;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #37b2ff; /* یک رنگ زمینه موقت برای تصویر خدمت */
+  border-radius: 25px;
+}
+
+.service-details h2,
+.service-details p {
+  margin: 0;
+}
+
+.service-image {
+  width: 100%;
+  height: 300px; /* تنظیم ارتفاع */
+  object-fit: cover; /* اجتناب از خط کردن تصویر */
+  border-radius: 10px; /* گرد کردن گوشه‌ها */
+}
+
+
+/* استایل برای سکشن سوم */
+.section-three {
+  background-color: #37b2ff;
+  padding: 10px;
+  border-radius: 55px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* استایل برای لوگوهای شرکت همکار */
+.company-logos {
+  margin: 20px 0;
+}
+
+.company-logos img {
+  width: 200px;
+  height: 150px;
+  margin: 0 20px;
+}
+
+/* استایل برای سکشن چهارم */
+.section-four {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+/* استایل برای هر ستون */
+.column {
+  text-align: right;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #ffffff; 
+}
+
+/* استایل برای سکشن پنجم */
+.section-five {
+  background-color: #ff7451;
+  padding: 10px;
+  padding-bottom: 40px;
+  border-radius: 35px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* استایل برای شمارنده‌ها */
+.counters {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.counter {
+  margin: 0 20px;
+}
+
+.counter h3 {
+  color: #ffffff;
+  font-size: 40px;
+  margin: 0;
+}
+
+.counter p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* استایل برای سکشن ششم */
+
+.section-six {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container .card{
+  width: 340px;
+  margin: 10px;
+  /* background: #444; */
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* .container .card:hover{
+  background: coral;
+} */
+
+.container .card .content{
+  transition: 0.3s;
+}
+
+.container .card .content:hover{
+  transform: scale(1.069);
+}
+
+.container .card .profile{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+  border: 5px solid coral;
+}
+
+.container .card .profile img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .detail h2,
+.container .card .detail h4{
+  margin: 10px 0;
+}
+
+.container .card .social{
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container .card .detail .social a{
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.container .card .social a:hover{
+  background: #3b0acf;
+}
+
+.container .card .social a i{
+  font-size: 21px;
+  color: rgb(187, 22, 22);
+}
+
+/* استایل برای Comment Cards در سکشن هفتم */
+
+
+.section-seven{
+  margin-top: 45px;
+}
+
+.comment-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.comment-card {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* تغییر این خط به align-items: flex-end; */
+}
+
+.comment-row {
+  text-align: right;
+  display: flex;
+  align-items: flex-end; /* تغییر این خط به align-items: flex-end; */
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px auto;
+  margin-left: 10px;
+  border: 5px solid rgb(53, 15, 245);
+}
+
+.avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comment {
+  padding: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  max-width: 80%; /* افزودن این خط برای اجتناب از چسبیدگی به همسایه ها */
+  word-wrap: break-word; /* افزودن این خط برای شکستن خطوط */
+}
+
+
+footer {
+	background: #101010;
+	padding: 20px 0;
+}
+
+.row {
+  justify-content: space-between;
+}
+
+.single-content {
+	text-align: center;
+	padding: 115px 0;
+}
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+}
+.single-box img {
+  width: 180px;
+  height: 180px;
+}
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 100;
+}
+.single-box h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+#basic-addon2 {
+	background: #fe1e4f;
+	color: #fff;
+}
+.socials i {
+	font-size: 18px;
+	margin-right: 15px;
+}
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+
